@@ -1,0 +1,284 @@
+
+
+
+/* #content .info { text-align: center; }
+#content .info img {    
+    width: 250px; height: 250px;
+    border: 2px solid #fff;
+}
+#content .info .infotxt { margin: 50px 0; }
+#content .info p {
+    font-size: 20px;
+    color: #fff;
+}
+#content .info i { font-size: 12px; } */
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* skill */
+.skill > div { position: relative;
+    width: 60%;    
+    margin: 0 auto;    
+}
+.skill > div > p {
+    color: #fff; font-size: 12px; text-align: right;
+    width: 100px;
+    padding: 3px 0px;
+}
+.skill .score {
+    position: absolute; left: 100px; width: calc(100% - 100px);
+    top: 20px; bottom: 20px;
+}
+.skill .score .myscore {
+    text-align: right;
+    color: #fff; font-size: 10px;
+    position: absolute; left: 5%; top: 50%;
+    margin-top: -14px;
+    height: 10px;
+}
+.skill span {
+    position: absolute; right: 0; top: 0;
+    transform: translateY(-50%);
+}
+.skill .html .myscore { width: 0%; background: #736d6b; }
+.skill .css .myscore { width: 0%; background: #736d6b; }
+.skill .script .myscore { width: 0%; background: #736d6b; }
+.skill .jquery .myscore { width: 0%; background: #736d6b; }
+.skill .react .myscore { width: 0%; background: #736d6b; }
+.skill .photoshop .myscore { width: 0%; background: #736d6b; }
+.skill .illustrator .myscore { width: 0%; background: #736d6b; }
+.skill .aftereffect .myscore { width: 0%; background: #736d6b; }
+
+#content .banner {
+    margin: 50px 0 0 0;
+    height: 300px;
+    background: url(../img/banner.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+#content .banner::before {
+    content:'';
+    background:rgba(0,0,0,0.3);
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+}
+#content .banner p { 
+    position:absolute; top:50%; left:50%;
+    transform:translate(-50%, -50%);
+    text-align: center; line-height: 1.2;;
+    color:#fff; font-size:20px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* bing */
+#content .bing {
+    text-align: center;
+    color: #d1c0a5;
+    margin: 150px 0 0 0;
+}
+/* #content .bing3 {
+    text-align: center;
+    color: #d1c0a5;
+    margin: 150px 0 0 0;
+    padding-bottom: 50px;
+} */
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* h2 공통 */
+#content h2 {
+    color: #362e2b; font-size: 20px; font-family: 'Raleway';
+    text-align: center; font-weight: bold;
+    margin: 50px 0 50px 0;
+    background: #d1c0a5;
+    border-radius: 5px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* portfolio */
+#portfolio { padding-top: 100px; }
+#portfolio .pofol ul { overflow: hidden; }
+#portfolio .pofol ul li {
+    float: left; width: 32%; 
+    margin-right: 2%;
+    position:relative; text-align: center;
+    background-size:cover;
+}
+#portfolio img { border-radius: 5px; }
+#portfolio .pofol ul li:nth-child(3){ margin-right: 0%;}
+
+
+#portfolio li > div { overflow:hidden; position:relative; border-radius: 5px; }
+#portfolio li > div::before {
+    content: ''; position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: rgba(56,46,43,0.7);
+    opacity: 0; transition: all 0.4s;
+}
+#portfolio li > div:hover::before {
+    opacity: 1; z-index:9;
+    border: 1px solid #d1c0a5;
+    border-radius: 5px;
+}
+
+#portfolio .view {
+    position:absolute; top:50%;
+    left:50%; transform:translate(-50%, -50%); 
+    font-size:30px; color:#d1c0a5;
+    /* width: 50px; height: 50px; 
+    background: #362e2b; border-radius: 50%;
+    line-height: 2;
+    opacity:0; transition:all 0.4s 0.2s;
+}
+#portfolio li > div:hover .view { opacity:1;  z-index:10 }
+#portfolio li img { transition:all 0.5s; }
+#portfolio li > div:hover > img { transform:scale(1.2); } */
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* slide 슬라이드 */
+.slide-group { margin: 100px 0 0 0; }
+.slide-group .slide {
+    /* height: 250px;
+    background-size:cover; background-repeat:no-repeat;
+    background-position:center; */
+    position:relative;
+}
+
+/* 슬라이드 이미지 */
+.slide-group .slide1 {
+    background-image: url(../img/pofol01.jpg);
+    width: 400px;
+}
+.slide-group .slide2 {
+    background-image: url(../img/pofol02.jpg);
+}
+.slide-group .slide3 {
+    background-image: url(../img/pofol03.jpg);
+}
+.slide-group .slide4 {
+    background-image: url(../img/pofol04.jpg);
+}
+
+/* 슬라이드 버튼 */
+.slide-outer { position: relative }
+.slide-outer .slick-arrow { 
+    font-size: 50px; color:#362e2b; 
+    position: absolute; top:50%;
+    transform: translateY(-50%); 
+    background: none; z-index: 99;
+}
+.slide-outer .prev { left: 5%; }    
+.slide-outer .next { right: 5% }
+
+/* 막대 애니메이션 */
+.slide-outer .slick-dots { 
+    position: absolute; bottom: 20px; width: 100%;
+    text-align: center;
+}
+.slide-outer .slick-dots li {
+    display: inline-block; width: 80px; 
+    height: 3px; background: #736d6b;
+    margin: 0 5px;
+    position: relative; 
+}    
+.slide-outer .slick-dots li button { 
+    width: 0%; height: 3px; 
+    background : #736d6b; text-indent: -99999px;
+    overflow: hidden;  position: absolute;
+    top: 0; left: 0; 
+}
+.slide-outer .slick-dots li.slick-active button { 
+    background: #362e2b; 
+    animation: barani 3s both;
+}
+@keyframes barani {
+    0% { width:0% }
+    100% { width:100% }
+}
+
+/* 슬라이드 텍스트 */
+.slide-outer .slide .text {
+    text-align: center; color: #fff;
+    font-size: 50px; font-weight: bold;
+    position:absolute; width:100%;
+    top:50%; transform:translateY(-50%);
+}
+.slide-outer p {
+    display: inline-block;
+    /* background: rgba(56,46,43,0.7); */
+    padding: 20px 100px; vertical-align: middle;
+    text-shadow: 1px 1px 10px #000;
+}
+
+/* 슬라이드 텍스트 애니 */
+.slide-outer .slide.slick-active .text p:nth-child(1) { 
+    animation: fadeIn 1s both 0.5s
+}
+.slide-outer .slide.slick-active .text p:nth-child(2) { 
+    animation: fadeIn 1s both 1s
+}
+.slide-outer .slide.slick-active .text p:nth-child(3) { 
+    animation: fadeIn 1s both 1.5s
+}
+.slide-outer .slide.slick-cloned .text { opacity: 0; }
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* contact */
+#contactme { padding-top: 100px; }
+#contactme .form1 {
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    background: #736d6b;
+    border-radius: 5px;
+}
+#contactme .form1 label {
+    width: 100px; display: inline-block;
+    vertical-align: middle;
+    color: #fff; font-size: 15px; text-align: right;
+    padding-right: 20px;
+}
+#contactme .form1 p:nth-of-type(4) label {
+    vertical-align: top;
+}
+#contactme .form1 input {
+    border: 1px solid #736d6b; padding: 3px 5px;
+    vertical-align: middle; font-size: 15px;
+    border-radius: 5px;
+}
+#contactme .form1 input[type=file] {border: none; font-size: 12px; }
+#contactme .form1 p {
+    padding: 10px 0;
+}
+#contactme .form1 #memo {
+    width: calc(90% - 80px);
+    height: 150px;
+    vertical-align: top;
+    border-radius: 5px;
+}
+#contactme .form1 p:nth-of-type(6) { text-align: center; padding-top: 15px; }
+#contactme .form1 p:nth-of-type(6) button {
+    background: #362e2b;
+    color: #fff; font-size: 12px;
+    font-weight: bold;
+    padding: 5px 20px;
+    margin: 0 5px; border-radius: 5px;
+}
+
+#contactme .form1 p:nth-of-type(6) button:hover  {
+    background: #fff; color: #362e2b;
+}
+/* #content .contact ::placeholder { color:#736d6b} */
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* footer */
+#footer { margin-top: 100px; background: #d1c0a5; position:relative; }
+#footer p { padding: 10px 0 30px 0;
+    color: #362e2b; text-align: center; font-size: 15px;
+    font-weight: bold; font-family: 'Raleway'
+}
+#footer .footimg {
+    height: 31px;
+    background: url(../img/fence02.gif) repeat-x 0 0;
+}
