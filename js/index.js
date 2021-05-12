@@ -17,35 +17,35 @@ $('.slide_group').slick({
 
 /////////////////////////////////////////////////////////////////////////////////////
 // 메뉴 클릭 시 on
-var topNear = $('#content').offset().top
-var meNear = $('#me').offset().top
-var portNear = $('#portfolio').offset().top
-$('#nav .depth1 > li').on('click', function(e){
-    e.preventDefault()
-    var num = $(this).index()
-    switch(num) {
-        case 0 : $('html').stop().animate({ scrollTop:0 }, 500); break;
-        case 1 : $('html').stop().animate({ scrollTop:meNear }, 500); break;
-        case 2 : $('html').stop().animate({ scrollTop:portNear }, 500); break;
-        default : break;
-    }
-}) 
+// var topNear = $('#content').offset().top
+// var meNear = $('#me').offset().top
+// var portNear = $('#portfolio').offset().top
+// $('#nav .depth1 > li').on('click', function(e){
+//     e.preventDefault()
+//     var num = $(this).index()
+//     switch(num) {
+//         case 0 : $('html').stop().animate({ scrollTop:0 }, 500); break;
+//         case 1 : $('html').stop().animate({ scrollTop:meNear }, 500); break;
+//         case 2 : $('html').stop().animate({ scrollTop:portNear }, 500); break;
+//         default : break;
+//     }
+// }) 
 
 /////////////////////////////////////////////////////////////////////////////////////
 // 스크롤
-$('.section').on('mousewheel', function(e, delta){
-    if (delta>0) {
-        var prev = $(this).prev().offset().top
-        $('html').stop().animate({
-            scrollTop:prev
-        }, 500, 'linear')
-    } else if (delta<0) {
-        var next = $(this).next().offset().top
-        $('html').stop().animate({
-            scrollTop:next
-        }, 500, 'linear')
-    }
-})
+// $('.section').on('mousewheel', function(e, delta){
+//     if (delta>0) {
+//         var prev = $(this).prev().offset().top
+//         $('html').stop().animate({
+//             scrollTop:prev
+//         }, 500, 'linear')
+//     } else if (delta<0) {
+//         var next = $(this).next().offset().top
+//         $('html').stop().animate({
+//             scrollTop:next
+//         }, 500, 'linear')
+//     }
+// })
 
 /////////////////////////////////////////////////////////////////////////////////////
 // 능력치
