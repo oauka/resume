@@ -117,7 +117,7 @@ h2 { color: #d1c0a5; font-size: 20px; font-weight: bold; }
 #slide4 .view img { width: 400px;}
 .portfolio .view p { font-size: 20px; color: #fff; font-weight: bold; margin-top: 20px; }
 
-.portfolio .pofolimg { overflow:hidden; position:relative; }
+.portfolio .pofolimg { overflow: hidden; position: relative; }
 .portfolio .pofolimg::before {
     content: ''; position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
@@ -129,19 +129,20 @@ h2 { color: #d1c0a5; font-size: 20px; font-weight: bold; }
     border: 1px solid #d1c0a5;
 }
 .portfolio .view {
-    position:absolute; top:50%;
-    left:50%; transform:translate(-50%, -50%); 
-    font-size:30px; color:#d1c0a5;
+    position: absolute; top: 50%;
+    left: 50%; transform:translate(-50%, -50%); 
+    font-size: 30px; color: #d1c0a5;
     line-height: 2;
-    opacity:0; transition:all 0.4s 0.2s;
+    opacity: 0; transition: all 0.4s 0.2s;
 }
-.portfolio .pofolimg:hover .view { opacity:1;  z-index:10 }
-.portfolio .pofolimg > img { transition:all 0.5s; }
-.portfolio .pofolimg:hover > img { transform:scale(1.2); }
+.portfolio .pofolimg:hover .view { opacity: 1;  z-index: 10 }
+.portfolio .pofolimg > img { transition: all 0.5s; }
+.portfolio .pofolimg:hover > img { transform: scale(1.2); }
 
 
-.portfolio .pofoltxt h3 { font-size: 30px; color: #d1c0a5; font-weight: bold; margin-bottom: 10px; }
+.portfolio .pofoltxt h3 { font-size: 30px; color: #d1c0a5; font-weight: bold; margin: 10px 0; }
 .portfolio .pofoltxt p { color: #fff; line-height: 1.5; font-size: 18px; }
+.portfolio .link { color: #fff; font-size: 14px; margin-top: 30px; }
 
 
 /*  */
