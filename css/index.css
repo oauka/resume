@@ -6,7 +6,6 @@
 .row { max-width: 1000px; margin: 0 auto; padding: 0px;  }
 body {  background: #362e2b; font-family: 'Nanum Gothic'; }
 
-
 #section0 { color: #fff;}
 
 /* menu */
@@ -29,10 +28,10 @@ body {  background: #362e2b; font-family: 'Nanum Gothic'; }
 .menu li a:hover { color: #fff; }
 .menu li.active a { color: #fff; }
 
-/*  */
+/* 공통 */
 h2 { color: #d1c0a5; font-size: 20px; font-weight: bold; }
 
-/*  */
+/* top */
 .top {
     background: url(../img/slide01.jpg) no-repeat center;
     height: 100vh;
@@ -58,7 +57,6 @@ h2 { color: #d1c0a5; font-size: 20px; font-weight: bold; }
     animation:fadeInDown 0.5s both 0.6s;
 }
 
-
 /* me */
 .me .imgbox img { position: absolute; left: 50%;  transform: translate(-50%, -50%); }
 .me .imgbox img:nth-child(2):hover { display: none; animation: ani 1s both 0s; }
@@ -66,7 +64,6 @@ h2 { color: #d1c0a5; font-size: 20px; font-weight: bold; }
     0% { opacity: 0; }    
     100% {  opacity: 0; }
 }
-
 .me .mebox {
     display: flex; justify-content: space-between; align-items: center;
     color: #fff; line-height: 1.5; font-size: 14px;
@@ -148,19 +145,34 @@ h2 { color: #d1c0a5; font-size: 20px; font-weight: bold; }
 
 
 /*  */
-
 .bottom .txt {
     position: absolute;
-    top: 45%; left: 50%;
+    top: 40%; left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; font-weight: bold;
     font-family: 'Raleway'
 }
-
-.bottom .txt h3 {
+.bottom h3 {
     font-size: 100px; color: #362e2b; font-weight: bold;
     animation: fadeInUp 1s both 1s;
 }
+.bottom .sns {
+    text-align: left;
+    position: absolute; left: 50%; transform: translateX(-50%);
+    margin-top: 20px;
+}
+.bottom .txt p { margin-bottom: 10px; }
+.bottom .txt a {
+    display: inline-block;    
+    width: 32px; height: 32px; line-height: 32px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    transition: all 0.3s;
+    text-align: center;
+}
+.bottom .txt a:hover { color: #d1c0a5; }
+.bottom .txt span { margin-left: 10px; }
+
 /* footer */
 #footer { background: #d1c0a5; }
 .footerbox {
